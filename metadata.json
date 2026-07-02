@@ -1,0 +1,6 @@
+{
+  "name": "苑杰个人官方网站",
+  "description": "二级演奏员、曾任上海民族乐团乐队首席苑杰先生的官方个人网站，展示其深厚的二胡演奏艺术、艺术传奇与音乐成就。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

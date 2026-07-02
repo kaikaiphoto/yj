@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", "Microsoft YaHei", sans-serif;
+  --font-serif: "Noto Serif SC", "Source Han Serif CN", "Georgia", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bronze-50: #fcfaf7;
+  --color-bronze-100: #f4edd4;
+  --color-bronze-200: #e8d9aa;
+  --color-bronze-300: #dac079;
+  --color-bronze-400: #cca553;
+  --color-bronze-500: #be8a36;
+  --color-bronze-600: #9e6d29;
+  --color-bronze-700: #7c5120;
+  --color-bronze-800: #5d3b19;
+  --color-bronze-900: #422812;
+  --color-bronze-950: #29170a;
+
+  --color-jade-50: #f4fcf9;
+  --color-jade-100: #dbf6ed;
+  --color-jade-200: #b9ebd9;
+  --color-jade-300: #88dabf;
+  --color-jade-400: #55bf9f;
+  --color-jade-500: #33a180;
+  --color-jade-600: #258167;
+  --color-jade-700: #206854;
+  --color-jade-800: #1c5344;
+  --color-jade-900: #184439;
+  --color-jade-950: #0d2721;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #4A0505;
+    color: #F7EFE0;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #4A0505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(247, 239, 224, 0.2);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(247, 239, 224, 0.4);
+  }
+}
+
+/* Custom brush stroke or calligraphic line */
+.brushed-border {
+  position: relative;
+}
+.brushed-border::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(247, 239, 224, 0.2) 20%, rgba(247, 239, 224, 0.2) 80%, transparent);
+}
+
+/* Elegant Dark Parchment style background overlay */
+.parchment-bg {
+  background-color: #3D0202;
+  background-image: radial-gradient(rgba(247, 239, 224, 0.04) 1px, transparent 1px), radial-gradient(rgba(247, 239, 224, 0.04) 1px, #3D0202 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Elegant dark silk style background overlay */
+.dark-silk-bg {
+  background-color: #4A0505;
+  background-image: radial-gradient(rgba(247, 239, 224, 0.03) 1px, transparent 1px), radial-gradient(rgba(247, 239, 224, 0.03) 1px, #4A0505 1px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
